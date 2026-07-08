@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biro_verse art!</title> 
+    <style>
+        /* General Styles */
+        body {
+            background-color: rgb(26, 27, 31);
+            color: rgb(255, 255, 255);
+            font-family: sans-serif;
+            margin: 0;
+            padding: 70px;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Navigation Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-bottom: 15px;
+        }
+        .logo h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            font-size: 18px;
+            transition: opacity 0.2s;
+        }
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        /* Divider */
+        hr {
+            border: 0;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.2);
+            margin: 10px 0 30px 0;
+        }
+
+        /* Art Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 175px;
+            max-width: 1200px;
+            margin: 0 auto 50px auto;
+        }
+        .gallery-item {
+            display: block;
+            background: #000000;
+            border: 12px solid #000000;
+            border-radius: 4px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: transform 0.2s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+        .gallery-item img, 
+        .gallery-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Footer */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">
+            <a href="Main.html">
+                <h2>Fernando Fernandez - Animator & Character Design</h2>
+            </a>
+        </div>
+        <nav>
+            <a href="Main.html">Work</a>
+            <a href="About_Me.html">About Me</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Art Gallery Section -->
+    <main class="gallery-grid">
+        
+        <a href="PersonalArt.html" class="gallery-item">
+            <img src="images/Personal_WorkArt/Girlfriend.PNG" alt="Biro Character Art">
+        </a>
+
+        <a href="PersonalAnimationReel.html" class="gallery-item">
+            <video loop autoplay muted playsinline>
+                <source src="videos/Demo_Animation_Reel.mp4" type="video/mp4">
+            </video>
+        </a>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; Fernando Fernandez</p>
+        <p><a href="#" target="_blank">LinkedIn</a></p>
+    </footer>
+
+</body>
+</html>
